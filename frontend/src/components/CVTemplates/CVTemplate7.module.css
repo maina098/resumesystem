@@ -1,0 +1,195 @@
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 10mm auto;
+  background: #fdfdfd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+.header {
+  background-color: #eee;
+  padding: 15mm;
+  border-radius: 0 0 20px 20px;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9pt;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 5mm;
+}
+
+.nameBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5mm;
+}
+
+.name {
+  margin: 0;
+  line-height: 0.9;
+}
+
+.firstName {
+  font-size: 45pt;
+  font-weight: 800;
+  color: #c0392b; /* Bold Red */
+  letter-spacing: -1px;
+}
+
+.lastName {
+  font-size: 45pt;
+  font-weight: 800;
+  color: #c0392b;
+  letter-spacing: -1px;
+}
+
+.photoPlaceholder {
+  width: 35mm;
+  height: 45mm;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.contactBar {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  padding-top: 4mm;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  font-size: 8pt;
+}
+
+.contactItem strong {
+  color: #c0392b;
+  margin-bottom: 1px;
+}
+
+.content {
+  padding: 10mm 15mm;
+}
+
+.section {
+  margin-bottom: 8mm;
+}
+
+.sectionTitle {
+  font-size: 11pt;
+  font-weight: 800;
+  color: #c0392b;
+  margin: 0 0 4mm 0;
+  letter-spacing: 1px;
+}
+
+.summary {
+  font-size: 8.5pt;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2mm 5mm;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 8.5pt;
+  font-weight: 500;
+}
+
+.skillsGrid li {
+  position: relative;
+  padding-left: 10px;
+}
+
+.skillsGrid li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #c0392b;
+}
+
+.expList {
+  display: flex;
+  flex-direction: column;
+  gap: 6mm;
+}
+
+.expItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.expHeader {
+  margin-bottom: 1mm;
+}
+
+.expTitle {
+  font-size: 10pt;
+  font-weight: 700;
+  margin: 0;
+}
+
+.expCompanyBlock {
+  font-size: 9pt;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 2mm;
+}
+
+.expDescription {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 9pt;
+  line-height: 1.5;
+  color: #444;
+}
+
+.expDescription li {
+  margin-bottom: 1mm;
+}
+
+.eduList {
+  display: flex;
+  flex-direction: column;
+  gap: 4mm;
+}
+
+.eduItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.eduDegree {
+  font-size: 10pt;
+  font-weight: 700;
+  margin: 0 0 1mm 0;
+}
+
+.eduSchool {
+  font-size: 9pt;
+  color: #555;
+  margin: 0;
+}

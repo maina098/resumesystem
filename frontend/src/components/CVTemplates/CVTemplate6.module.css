@@ -1,0 +1,132 @@
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+.header {
+  background-color: #1a52b8; /* Solid Vibrant Blue */
+  color: white;
+  text-align: center;
+  padding: 15mm 10mm;
+}
+
+.name {
+  font-size: 24pt;
+  font-weight: 700;
+  margin: 0 0 2mm 0;
+  letter-spacing: 1px;
+}
+
+.jobTitle {
+  font-size: 12pt;
+  font-weight: 400;
+  margin: 0;
+}
+
+.contactBar {
+  text-align: center;
+  font-size: 9pt;
+  padding: 4mm 0;
+  border-bottom: 1px solid #eee;
+  margin: 0 15mm 5mm 15mm;
+  color: #555;
+}
+
+.content {
+  padding: 0 15mm 15mm 15mm;
+}
+
+.section {
+  margin-bottom: 6mm;
+}
+
+.sectionTitle {
+  font-size: 11pt;
+  font-weight: 700;
+  color: #1a52b8;
+  margin: 0 0 4mm 0;
+}
+
+.summary {
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #444;
+  margin: 0;
+}
+
+.expItem {
+  margin-bottom: 5mm;
+}
+
+.expHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2mm;
+}
+
+.expTitle {
+  font-size: 10pt;
+  font-weight: 700;
+  margin: 0;
+}
+
+.expDate {
+  font-size: 9pt;
+  color: #666;
+}
+
+.expSchool {
+  font-size: 9.5pt;
+  margin: 0;
+  color: #555;
+}
+
+.expDescription {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #444;
+}
+
+.expDescription li {
+  margin-bottom: 1mm;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 9.5pt;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2mm 10mm;
+}
+
+.skillsList li {
+  position: relative;
+  padding-left: 10px;
+}
+
+.skillsList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1a52b8;
+}

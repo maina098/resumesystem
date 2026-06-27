@@ -1,0 +1,148 @@
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+  box-sizing: border-box;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5mm;
+}
+
+.name {
+  font-size: 24pt;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 2mm 0;
+}
+
+.contactInfo {
+  font-size: 10pt;
+  margin: 0;
+}
+
+.dividerThick {
+  border-bottom: 3px solid #000;
+  margin-bottom: 3mm;
+}
+
+.dividerThin {
+  border-bottom: 1px solid #000;
+  margin: 3mm 0;
+}
+
+.jobTitle {
+  text-align: center;
+  font-size: 11pt;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.section {
+  margin: 5mm 0;
+}
+
+.sectionCenter {
+  margin: 5mm 0;
+  text-align: center;
+}
+
+.sectionTitleCenter {
+  font-size: 11pt;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 4mm 0;
+}
+
+.summary {
+  font-size: 10pt;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2mm;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 10pt;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 5mm;
+}
+
+.expItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.expHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1mm;
+}
+
+.expCompany {
+  font-size: 11pt;
+  font-weight: 700;
+  margin: 0;
+}
+
+.expDate {
+  font-size: 10pt;
+  font-weight: 700;
+}
+
+.expTitle {
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0 0 2mm 0;
+}
+
+.expAccomplishments {
+  font-size: 10pt;
+  line-height: 1.5;
+}
+
+.expAccomplishments strong {
+  display: block;
+  margin-bottom: 1mm;
+}
+
+.expAccomplishments ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.expAccomplishments li {
+  margin-bottom: 1mm;
+}
+
+.eduGpa {
+  font-size: 10pt;
+  margin: 0;
+}

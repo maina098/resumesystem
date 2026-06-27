@@ -1,0 +1,112 @@
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 8mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Georgia", serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+.innerBorder {
+  border: 2px solid #a8c3b9; /* Mint Green */
+  height: 100%;
+  padding: 12mm 15mm;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 8mm;
+}
+
+.name {
+  font-size: 24pt;
+  font-weight: 400;
+  margin: 0 0 2mm 0;
+}
+
+.jobTitle {
+  font-size: 11pt;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #555;
+}
+
+.section {
+  margin-bottom: 6mm;
+}
+
+.sectionTitle {
+  font-size: 11pt;
+  font-weight: 700;
+  border-bottom: 1px solid #a8c3b9;
+  padding-bottom: 2px;
+  margin: 0 0 3mm 0;
+  text-transform: uppercase;
+}
+
+.summary {
+  font-size: 9.5pt;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+  font-style: italic;
+}
+
+.contactBar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 9pt;
+  margin: 6mm 0;
+}
+
+.contactItem strong {
+  color: #a8c3b9;
+}
+
+.item {
+  margin-bottom: 4mm;
+}
+
+.itemTitle {
+  font-size: 10pt;
+  font-weight: 700;
+  margin: 0 0 1mm 0;
+}
+
+.itemSubtitle {
+  font-size: 9.5pt;
+  font-style: italic;
+  margin: 0 0 1mm 0;
+  color: #555;
+}
+
+.itemList {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 9pt;
+  line-height: 1.5;
+}
+
+.itemList li {
+  margin-bottom: 1mm;
+}
+
+.skillsParagraph {
+  font-size: 9.5pt;
+  line-height: 1.5;
+  margin: 0;
+}

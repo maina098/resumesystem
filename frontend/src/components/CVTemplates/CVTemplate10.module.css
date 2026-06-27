@@ -1,0 +1,172 @@
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+.header {
+  background-color: #2c3e50; /* Dark slate blue */
+  color: white;
+  padding: 15mm;
+  border-radius: 0 0 15px 15px;
+}
+
+.headerContent {
+  text-align: center;
+}
+
+.name {
+  font-size: 28pt;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin: 0 0 4mm 0;
+}
+
+.contactInfo {
+  font-size: 9pt;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contactInfo span::after {
+  content: " | ";
+  margin-left: 10px;
+}
+
+.contactInfo span:last-child::after {
+  content: "";
+}
+
+.content {
+  padding: 12mm 15mm;
+}
+
+.section {
+  margin-bottom: 8mm;
+}
+
+.sectionTitle {
+  font-size: 11pt;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 4mm 0;
+  letter-spacing: 1px;
+}
+
+.summary {
+  font-size: 9.5pt;
+  line-height: 1.6;
+  color: #444;
+  margin: 0;
+}
+
+.expList {
+  display: flex;
+  flex-direction: column;
+  gap: 6mm;
+}
+
+.expItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.expTitle {
+  font-size: 10.5pt;
+  font-weight: 700;
+  margin: 0 0 1mm 0;
+}
+
+.expMeta {
+  font-size: 9pt;
+  margin-bottom: 2mm;
+}
+
+.expCompany {
+  font-weight: 600;
+  color: #555;
+}
+
+.expDate {
+  color: #777;
+}
+
+.expDescription {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #444;
+}
+
+.expDescription li {
+  margin-bottom: 1mm;
+}
+
+.twoColumn {
+  display: flex;
+  gap: 10mm;
+}
+
+.column {
+  flex: 1;
+}
+
+.eduItem {
+  margin-bottom: 4mm;
+}
+
+.eduDegree {
+  font-size: 10pt;
+  font-weight: 700;
+  margin: 0 0 1mm 0;
+}
+
+.eduSchool {
+  font-size: 9pt;
+  margin: 0 0 1mm 0;
+  color: #555;
+}
+
+.eduDate {
+  font-size: 8.5pt;
+  color: #777;
+  margin: 0;
+}
+
+.skillsGrid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 9.5pt;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2mm;
+}
+
+.skillsGrid li {
+  position: relative;
+  padding-left: 10px;
+}
+
+.skillsGrid li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2c3e50;
+}

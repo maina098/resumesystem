@@ -1,0 +1,164 @@
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 15mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+.header {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8mm;
+  margin-bottom: 8mm;
+}
+
+.name {
+  font-size: 24pt;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin: 0 0 2mm 0;
+  color: #222;
+}
+
+.jobTitle {
+  font-size: 10pt;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #666;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  gap: 10mm;
+}
+
+.sidebar {
+  width: 30%;
+  border-right: 1px solid #eee;
+  padding-right: 5mm;
+}
+
+.mainArea {
+  width: 70%;
+}
+
+.section {
+  margin-bottom: 8mm;
+}
+
+.sectionTitle {
+  font-size: 11pt;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #222;
+  margin: 0 0 4mm 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2px;
+}
+
+.infoText {
+  font-size: 9pt;
+  margin: 0 0 2mm 0;
+  color: #555;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 9pt;
+}
+
+.skillsList li {
+  margin-bottom: 1.5mm;
+  color: #555;
+}
+
+.eduItem {
+  margin-bottom: 4mm;
+}
+
+.eduDate {
+  font-size: 8pt;
+  color: #888;
+  margin: 0 0 1mm 0;
+}
+
+.eduDegree {
+  font-size: 9.5pt;
+  font-weight: 600;
+  margin: 0 0 1mm 0;
+  color: #333;
+}
+
+.eduSchool {
+  font-size: 9pt;
+  margin: 0;
+  color: #666;
+}
+
+.summary {
+  font-size: 9.5pt;
+  line-height: 1.6;
+  color: #444;
+  margin: 0;
+}
+
+.expList {
+  display: flex;
+  flex-direction: column;
+  gap: 6mm;
+}
+
+.expItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.expCompany {
+  font-size: 10.5pt;
+  font-weight: 700;
+  margin: 0 0 1mm 0;
+  color: #222;
+}
+
+.expTitle {
+  font-size: 9.5pt;
+  font-weight: 600;
+  margin: 0 0 1mm 0;
+  color: #444;
+}
+
+.expDate {
+  font-size: 8.5pt;
+  color: #888;
+  margin: 0 0 2mm 0;
+  font-style: italic;
+}
+
+.expDescription {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #444;
+}
+
+.expDescription li {
+  margin-bottom: 1mm;
+}

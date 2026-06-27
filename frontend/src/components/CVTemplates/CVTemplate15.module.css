@@ -1,0 +1,183 @@
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Georgia", serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+.header {
+  text-align: center;
+  padding: 15mm 15mm 5mm 15mm;
+}
+
+.name {
+  font-size: 32pt;
+  font-weight: 400;
+  color: #2c2c2c;
+  margin: 0 0 2mm 0;
+}
+
+.jobTitle {
+  font-size: 14pt;
+  font-weight: 400;
+  color: #8c7b6c; /* Subtle Beige/Brown */
+  margin: 0;
+}
+
+.contactBar {
+  display: flex;
+  justify-content: center;
+  gap: 5mm;
+  font-size: 9pt;
+  color: #555;
+  margin-bottom: 10mm;
+}
+
+.contactBar span::after {
+  content: "•";
+  margin-left: 5mm;
+  color: #8c7b6c;
+}
+
+.contactBar span:last-child::after {
+  content: "";
+}
+
+.content {
+  padding: 0 20mm 20mm 20mm;
+}
+
+.summary {
+  font-size: 10pt;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 0 10mm 0;
+  color: #444;
+  font-style: italic;
+}
+
+.section {
+  margin-bottom: 8mm;
+}
+
+.sectionTitle {
+  font-size: 12pt;
+  font-weight: 700;
+  color: #8c7b6c;
+  margin: 0 0 4mm 0;
+  border-bottom: 1px solid #e0d8d0;
+  padding-bottom: 2mm;
+  display: flex;
+  align-items: center;
+}
+
+.sectionTitle::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #8c7b6c;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.expList {
+  display: flex;
+  flex-direction: column;
+  gap: 6mm;
+}
+
+.expItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.expHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1mm;
+}
+
+.expTitle {
+  font-size: 11pt;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.expDate {
+  font-size: 9pt;
+  color: #8c7b6c;
+}
+
+.expCompany {
+  font-size: 10pt;
+  font-style: italic;
+  color: #555;
+  margin: 0 0 2mm 0;
+}
+
+.expDescription {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #444;
+}
+
+.expDescription li {
+  margin-bottom: 1mm;
+}
+
+.eduList {
+  display: flex;
+  flex-direction: column;
+  gap: 4mm;
+}
+
+.eduItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.eduDegree {
+  font-size: 11pt;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.eduSchool {
+  font-size: 10pt;
+  color: #555;
+  margin: 0;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3mm;
+}
+
+.skillTag {
+  background-color: #f8f6f4;
+  border: 1px solid #e0d8d0;
+  color: #555;
+  padding: 1.5mm 3mm;
+  border-radius: 4px;
+  font-size: 9pt;
+}

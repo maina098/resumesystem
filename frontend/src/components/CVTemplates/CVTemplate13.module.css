@@ -1,0 +1,163 @@
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+  display: flex;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+.sidebar {
+  width: 33%;
+  background-color: #3f4756; /* Dark Grey / Slate */
+  color: white;
+  padding: 15mm 10mm;
+  box-sizing: border-box;
+}
+
+.photoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12mm;
+}
+
+.photoPlaceholder {
+  width: 45mm;
+  height: 45mm;
+  border-radius: 50%;
+  background-color: #5d6778;
+}
+
+.sidebarSection {
+  margin-bottom: 8mm;
+}
+
+.sidebarTitle {
+  font-size: 14pt;
+  font-weight: 700;
+  margin: 0 0 4mm 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 2px;
+}
+
+.contactItem {
+  font-size: 9pt;
+  margin-bottom: 3mm;
+}
+
+.contactItem strong {
+  display: block;
+  margin-bottom: 1mm;
+  color: #aeb5c2;
+}
+
+.contactItem p {
+  margin: 0;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 9pt;
+}
+
+.skillsList li {
+  margin-bottom: 2mm;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mainContent {
+  width: 67%;
+  padding: 15mm;
+  box-sizing: border-box;
+}
+
+.header {
+  margin-bottom: 12mm;
+}
+
+.name {
+  font-size: 28pt;
+  font-weight: 800;
+  color: #222;
+  margin: 0 0 2mm 0;
+}
+
+.jobTitle {
+  font-size: 13pt;
+  font-weight: 500;
+  color: #666;
+  margin: 0;
+}
+
+.section {
+  margin-bottom: 10mm;
+}
+
+.sectionTitle {
+  font-size: 14pt;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 5mm 0;
+}
+
+.expList {
+  display: flex;
+  flex-direction: column;
+  gap: 6mm;
+}
+
+.expItem {
+  display: flex;
+  gap: 5mm;
+}
+
+.expDate {
+  width: 25%;
+  font-size: 9pt;
+  color: #555;
+  font-weight: 600;
+}
+
+.expDetails {
+  width: 75%;
+}
+
+.expTitle {
+  font-size: 10pt;
+  font-weight: 700;
+  margin: 0 0 1mm 0;
+  color: #222;
+}
+
+.expCompany {
+  font-size: 9.5pt;
+  color: #666;
+  margin: 0 0 2mm 0;
+}
+
+.expDescription {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 9pt;
+  line-height: 1.5;
+  color: #444;
+}
+
+.expDescription li {
+  margin-bottom: 1mm;
+}

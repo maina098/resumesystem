@@ -1,0 +1,71 @@
+.filterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Actually in Canva it's somewhat centered but usually left aligned in the grid container. Wait, in the screenshot it's left aligned within the main content area */
+  gap: 16px;
+  padding: 0 24px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background-color: var(--color-bg-main);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 48px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.searchWrapper:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+.searchIcon {
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.searchInput {
+  border: none;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  color: var(--color-text-main);
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: var(--color-text-light);
+}
+
+.filterButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 20px;
+  background-color: var(--color-bg-main);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-main);
+  transition: background-color 0.2s;
+}
+
+.filterButton:hover {
+  background-color: var(--color-bg-alt);
+}
+
+.filterIcon {
+  display: flex;
+  align-items: center;
+}

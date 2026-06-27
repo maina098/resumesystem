@@ -1,0 +1,221 @@
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+  display: flex;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+.sidebar {
+  width: 38%;
+  background-color: #2c3e50; /* Dark Navy */
+  color: white;
+  padding: 15mm;
+  box-sizing: border-box;
+}
+
+.photoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12mm;
+}
+
+.photoPlaceholder {
+  width: 45mm;
+  height: 45mm;
+  border-radius: 50%;
+  background-color: #34495e;
+  border: 4px solid #ecf0f1;
+}
+
+.sidebarSection {
+  margin-bottom: 10mm;
+}
+
+.sidebarTitle {
+  font-size: 13pt;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 3px;
+  margin-bottom: 4mm;
+}
+
+.contactDetails {
+  font-size: 9pt;
+}
+
+.contactItem {
+  margin: 0 0 3mm 0;
+  display: flex;
+  align-items: center;
+}
+
+.contactItem strong {
+  margin-right: 6px;
+  color: #bdc3c7;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 9pt;
+}
+
+.skillsList li {
+  margin-bottom: 3mm;
+  padding-left: 12px;
+  position: relative;
+}
+
+.skillsList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #bdc3c7;
+}
+
+.educationItem {
+  margin-bottom: 4mm;
+}
+
+.degree {
+  font-size: 10pt;
+  font-weight: 600;
+  margin: 0 0 1mm 0;
+}
+
+.school {
+  font-size: 9pt;
+  margin: 0 0 1mm 0;
+  color: #ecf0f1;
+}
+
+.eduDate {
+  font-size: 8pt;
+  margin: 0;
+  color: #bdc3c7;
+}
+
+.mainContent {
+  width: 62%;
+  padding: 15mm;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 12mm;
+  padding-top: 10mm;
+}
+
+.name {
+  font-size: 26pt;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 2mm 0;
+  letter-spacing: 2px;
+}
+
+.jobTitle {
+  font-size: 11pt;
+  font-weight: 400;
+  color: #7f8c8d;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.mainSection {
+  margin-bottom: 8mm;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 2px;
+  margin-bottom: 4mm;
+}
+
+.iconPlaceholder {
+  width: 14px;
+  height: 14px;
+  background-color: #2c3e50;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.mainTitle {
+  font-size: 12pt;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.summary {
+  font-size: 9.5pt;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 6mm;
+}
+
+.expHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1mm;
+}
+
+.expCompany {
+  font-size: 11pt;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.expDate {
+  font-size: 9pt;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.expTitle {
+  font-size: 10pt;
+  font-weight: 500;
+  color: #7f8c8d;
+  margin: 0 0 3mm 0;
+  font-style: italic;
+}
+
+.expDescription {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #555;
+}
+
+.expDescription li {
+  margin-bottom: 2mm;
+}

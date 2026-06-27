@@ -1,0 +1,85 @@
+.editorLayout {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 64px); /* Subtract Header height */
+  background-color: var(--color-bg-alt);
+  overflow: hidden;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: white;
+  border-bottom: 1px solid var(--color-border);
+  z-index: 10;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.backButton:hover {
+  color: var(--color-text-main);
+}
+
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.downloadBtn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.splitScreen {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.leftPanel {
+  flex: 1;
+  min-width: 400px;
+  max-width: 600px;
+  background-color: white;
+  overflow-y: auto;
+  border-right: 1px solid var(--color-border);
+}
+
+.rightPanel {
+  flex: 2;
+  background-color: #e5e7eb; /* Slightly darker grey for contrast against paper */
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
+.previewContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.previewWrapper {
+  /* To simulate the paper size scale down on smaller screens */
+  transform-origin: top center;
+  transition: transform 0.2s;
+}

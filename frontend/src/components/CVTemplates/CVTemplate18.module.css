@@ -1,0 +1,205 @@
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+  display: flex;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+.sidebar {
+  width: 35%;
+  background-color: #1a1a1a; /* Black */
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarTop {
+  background-color: #0d47a1; /* Dark Blue */
+  padding: 15mm 0;
+  display: flex;
+  justify-content: center;
+  border-bottom-right-radius: 50%;
+}
+
+.photoContainer {
+  width: 45mm;
+  height: 45mm;
+}
+
+.photoPlaceholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  border: 3px solid white;
+}
+
+.sidebarContent {
+  padding: 15mm 10mm;
+}
+
+.sidebarSection {
+  margin-bottom: 8mm;
+}
+
+.sidebarTitle {
+  font-size: 11pt;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 4mm 0;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 15px;
+  padding: 1mm 0;
+}
+
+.summary {
+  font-size: 8.5pt;
+  line-height: 1.5;
+  text-align: center;
+  color: #ccc;
+  margin: 0;
+}
+
+.contactItem {
+  font-size: 8.5pt;
+  margin-bottom: 3mm;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 2mm;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 9pt;
+  color: #ccc;
+}
+
+.skillsList li {
+  margin-bottom: 2mm;
+  position: relative;
+  padding-left: 10px;
+}
+
+.skillsList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0d47a1;
+}
+
+.mainContent {
+  width: 65%;
+  padding: 15mm;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #0d47a1; /* Dark Blue */
+  color: white;
+  padding: 15mm;
+  margin: -15mm -15mm 10mm -15mm; /* Pull out to edges */
+}
+
+.name {
+  font-size: 28pt;
+  font-weight: 800;
+  margin: 0 0 2mm 0;
+  line-height: 1.1;
+}
+
+.jobTitle {
+  font-size: 12pt;
+  font-weight: 400;
+  margin: 0;
+  color: #90caf9;
+}
+
+.section {
+  margin-bottom: 10mm;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+  margin-bottom: 5mm;
+  background-color: #0d47a1;
+  color: white;
+  padding: 2mm 5mm;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.sectionTitle {
+  font-size: 12pt;
+  font-weight: 700;
+  margin: 0;
+}
+
+.sectionIcon {
+  font-size: 12pt;
+}
+
+.expList, .eduList {
+  display: flex;
+  flex-direction: column;
+  gap: 6mm;
+}
+
+.expItem, .eduItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.expCompany, .eduSchool {
+  font-size: 11pt;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 1mm 0;
+}
+
+.expMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9.5pt;
+  margin-bottom: 2mm;
+}
+
+.expTitle, .eduDegree {
+  font-style: italic;
+  color: #555;
+  font-weight: 600;
+}
+
+.expDate {
+  color: #888;
+}
+
+.expDescription {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #444;
+}
+
+.expDescription li {
+  margin-bottom: 1mm;
+}

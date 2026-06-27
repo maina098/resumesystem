@@ -1,0 +1,197 @@
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+  display: flex;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+.sidebar {
+  width: 35%;
+  background-color: #3b4358;
+  color: white;
+  padding: 15mm 10mm;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatarPlaceholder {
+  width: 35mm;
+  height: 35mm;
+  border-radius: 50%;
+  background-color: #555d72;
+  margin: 0 auto 10mm;
+  border: 3px solid white;
+}
+
+.sidebarSection {
+  margin-bottom: 8mm;
+}
+
+.sidebarTitle {
+  font-size: 14pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 4px;
+  margin-bottom: 5mm;
+}
+
+.contactItem {
+  margin-bottom: 4mm;
+  font-size: 9pt;
+}
+
+.contactItem strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #9ba4b5;
+}
+
+.contactItem p {
+  margin: 0;
+}
+
+.sidebarItem {
+  margin-bottom: 5mm;
+}
+
+.sidebarItemTitle {
+  font-size: 10pt;
+  font-weight: 600;
+  margin: 0 0 2px 0;
+}
+
+.sidebarItemSubtitle {
+  font-size: 9pt;
+  margin: 0 0 2px 0;
+  color: #c2c9d6;
+}
+
+.sidebarItemDate {
+  font-size: 8pt;
+  margin: 0;
+  color: #9ba4b5;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillsList li {
+  font-size: 9pt;
+  margin-bottom: 3px;
+  position: relative;
+  padding-left: 10px;
+}
+
+.skillsList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #9ba4b5;
+}
+
+.main {
+  width: 65%;
+  padding: 15mm;
+  background-color: white;
+}
+
+.header {
+  margin-bottom: 12mm;
+}
+
+.name {
+  font-size: 26pt;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 4px 0;
+}
+
+.jobTitle {
+  font-size: 12pt;
+  font-weight: 500;
+  color: #34495e;
+  margin: 0 0 4mm 0;
+}
+
+.summary {
+  font-size: 10pt;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+.mainSection {
+  margin-bottom: 8mm;
+}
+
+.mainTitle {
+  font-size: 16pt;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 4px;
+  margin-bottom: 6mm;
+}
+
+.experienceItem {
+  display: flex;
+  margin-bottom: 6mm;
+}
+
+.experienceDate {
+  width: 25%;
+  font-size: 9pt;
+  color: #7f8c8d;
+  font-weight: 500;
+  padding-top: 2px;
+}
+
+.experienceContent {
+  width: 75%;
+  padding-left: 5mm;
+  border-left: 2px solid #ecf0f1;
+}
+
+.experienceTitle {
+  font-size: 11pt;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 2px 0;
+}
+
+.experienceCompany {
+  font-size: 10pt;
+  color: #7f8c8d;
+  margin: 0 0 3px 0;
+  font-weight: 500;
+}
+
+.experienceDescription {
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #555;
+}
+
+.experienceDescription p {
+  margin: 0 0 4px 0;
+}
